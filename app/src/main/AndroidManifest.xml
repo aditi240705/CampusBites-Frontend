@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CampusBites"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".item_review"
+            android:exported="false" />
+        <activity
+            android:name=".item_vendor_complaint"
+            android:exported="false" />
+        <activity
+            android:name=".item_user_complaint"
+            android:exported="false" />
+        <activity
+            android:name=".activity_complaints"
+            android:exported="false" />
+        <activity
+            android:name=".Admindashboard"
+            android:exported="false" />
+        <activity
+            android:name=".CanteenListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPwd"
+            android:exported="false" />
+        <activity
+            android:name=".vendorprofile1"
+            android:exported="false" />
+        <activity
+            android:name=".adddiscount1"
+            android:exported="false" />
+        <activity
+            android:name=".completedorders1"
+            android:exported="false" />
+        <activity
+            android:name=".liveorders1"
+            android:exported="false" />
+        <activity
+            android:name=".editmenu1"
+            android:exported="false" />
+        <activity
+            android:name=".vendormenu1"
+            android:exported="false" />
+        <activity
+            android:name=".addmenu1"
+            android:exported="false" />
+        <activity
+            android:name=".managemenu1"
+            android:exported="false" />
+        <activity
+            android:name=".vendordashboard1"
+            android:exported="false" />
+        <activity
+            android:name=".canteenreview1"
+            android:exported="false" />
+        <activity
+            android:name=".changepassword1"
+            android:exported="false" />
+        <activity
+            android:name=".userprofile1"
+            android:exported="false" />
+        <activity
+            android:name=".listofcomplaints1"
+            android:exported="false" />
+        <activity
+            android:name=".complaintstatus1"
+            android:exported="false" />
+        <activity
+            android:name=".complaintsubmitted1"
+            android:exported="false" />
+        <activity
+            android:name=".reportcomplaint2"
+            android:exported="false" />
+        <activity
+            android:name=".myaccount1"
+            android:exported="false" />
+        <activity
+            android:name=".reviewsubmitted1"
+            android:exported="false" />
+        <activity
+            android:name=".review1"
+            android:exported="false" />
+        <activity
+            android:name=".orderstatus1"
+            android:exported="false" />
+        <activity
+            android:name=".paymentcancelled1"
+            android:exported="false" />
+        <activity
+            android:name=".paymentfailed1"
+            android:exported="false" />
+        <activity
+            android:name=".paymentsuccess1"
+            android:exported="false" />
+        <activity
+            android:name=".paymentprocess1"
+            android:exported="false" />
+        <activity
+            android:name=".payment1"
+            android:exported="false" />
+        <activity
+            android:name=".menulist1"
+            android:exported="false" />
+        <activity
+            android:name=".createnewpwd1"
+            android:exported="false" />
+        <activity
+            android:name=".emailverification2"
+            android:exported="false" />
+        <activity
+            android:name=".acceptedorder1"
+            android:exported="false" />
+        <activity
+            android:name=".welcome1"
+            android:exported="false" />
+        <activity
+            android:name=".complaintlist"
+            android:exported="false" />
+        <activity
+            android:name=".cart"
+            android:exported="false" />
+        <activity
+            android:name=".AccountcreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wxhome1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

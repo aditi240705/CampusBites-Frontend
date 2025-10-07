@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admindashboard">
+    <ScrollView
+        android:id="@+id/resolveIssueScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/resolveIssueContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resolve Dispute"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <!-- User & Vendor IDs -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tvUserIdLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Id"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvUserIdValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvVendorIdLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Canteen Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVendorIdValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="--" />
+            </LinearLayout>
+
+            <!-- Issue Summary (read-only) -->
+            <TextView
+                android:id="@+id/tvIssueSummaryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue Summary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvIssueSummaryValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:padding="12dp"
+                android:background="#F5F5F5"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Decision: Solve or Deny -->
+            <TextView
+                android:id="@+id/tvDecisionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decision"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgDecision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rbSolve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solve" />
+
+                <RadioButton
+                    android:id="@+id/rbDeny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deny"
+                    android:layout_marginStart="24dp" />
+            </RadioGroup>
+
+            <!-- Reason (required) -->
+            <TextView
+                android:id="@+id/tvReasonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etReason"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="top|start"
+                android:hint="Explain the resolution or denial..."
+                android:inputType="textMultiLine"
+                android:maxLength="1000"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Submit -->
+            <Button
+                android:id="@+id/btnSubmitResolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF6B00"
+                android:text="Submit Resolution" />
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:backgroundTint="#FF5D5D"
+                android:textColor="#fff"
+                android:textSize="16sp"/>
+
+            <!-- Optional: past history entry point -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

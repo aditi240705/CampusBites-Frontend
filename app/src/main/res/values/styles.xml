@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Theme (leave as-is if you already have a parent theme) -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize app colors, fonts, etc. -->
+    </style>
+
+    <!-- ✅ Custom style for RatingBar -->
+    <style name="RatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressTint">@android:color/holo_orange_light</item>
+        <item name="android:secondaryProgressTint">@android:color/darker_gray</item>
+        <item name="android:progressBackgroundTint">@android:color/darker_gray</item>
+    </style>
+
+</resources>
