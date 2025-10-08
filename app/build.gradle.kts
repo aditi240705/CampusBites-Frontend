@@ -4,17 +4,18 @@ plugins {
 }
 
 android {
-    namespace = "com.saveetha.campusbites"
+    namespace = "com.simats.campusbites"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.saveetha.campusbites"
+        applicationId = "com.simats.campusbites"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.r" +
+                "unner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -50,5 +51,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.android.billingclient:billing-ktx:6.1.0")
 
 }
